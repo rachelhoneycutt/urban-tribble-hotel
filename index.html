@@ -16,27 +16,31 @@
     <br>
     <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Frachelhoneycutt.github.io%2Furban-tribble-hotel%2F" target="_blank">Look at this pages validity!!</a>
     <br>
-    <a href="https://github.com/rachelhoneycutt">Check out my Github!</a>
+    <a href="https://github.com/rachelhoneycutt" target="_blank">Check out my Github!</a>
     <br>
 </div>
 
   <div class="container">
-    <h1>Welcome to Underwater Bingo!</h1>
+    <h1>Welcome to Underwater Bingo!!!</h1>
 
     <div class="loginPage">
       <h3>Please login below or sign up a new team.</h3>
       <form>
-        <div class="mb-3">
-          <label for="userEmail" class="form-label">Email:</label>
-          <input type="email" class="form-control" id="userEmail" placeholder="name@example.com">
+        <div class="row mb-3">
+          <label for="oldEmail" class="col-sm-2 col-form-label">Email:</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="oldEmail" placeholder="name@example.com">
+          </div>
         </div>
 
-        <div class="mb-3">
-          <label for="pwd" class="form-label">Password:</label>
-          <input type="password" class="form-control" id="pwd" placeholder="Enter Password">
-            <span class="input-group-btn">
-              <button class="btn btn-default reveal" type="button"><i class="bi-eye-fill"></i></button>
-            </span>
+        <div class="row mb-3">
+          <label for="oldpwd" class="col-sm-2 col-form-label">Password:</label>
+          <div class="col-sm-10">
+            <input type="password" class="form-control" id="oldpwd" placeholder="Enter Password">
+              <span class="input-group-btn">
+                <button class="btn btn-default reveal" type="button"><i class="bi-eye-fill"></i></button>
+              </span>
+          </div>
         </div>
 
           <br>
@@ -49,40 +53,49 @@
     <div class="signUp">
       <h3>Please fill out the form below.</h3>
       <form>
-        <div class="mb-3">
-          <label for="fname" class="form-label">First name:</label>
-          <input type="text" class="form-control" id="fname" placeholder="John">
+        <div class="row mb-3">
+          <label for="fname" class="col-sm-2 col-form-label">First name:</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="fname" placeholder="John">
+          </div>
         </div>
 
-        <div class="mb-3">
-          <label for="lname" class="form-label">Last name:</label>
-          <input type="text" class="form-control" id="lname" placeholder="Doe">
+        <div class="row mb-3">
+          <label for="lname" class="col-sm-2 col-form-label">Last name:</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="lname" placeholder="Doe">
+            </div>
         </div>
       
-        <div class="mb-3">
-          <label for="phoneNumber" class="form-label">Phone Number:</label>
-          <input type="text" class="form-control" id="phoneNumber" placeholder="XXX-XXX-XXXX">
+        <div class="row mb-3">
+          <label for="phoneNumber" class="col-sm-2 col-form-label">Phone Number:</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="phoneNumber" placeholder="XXX-XXX-XXXX">
+          </div>
         </div>
 
-        <div class="mb-3">
-          <label for="userEmail" class="form-label">Email:</label>
-          <input type="email" class="form-control" id="userEmail" placeholder="name@example.com">
+        <div class="row mb-3">
+          <label for="newEmail" class="col-sm-2 col-form-labell">Email:</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="newEmail" placeholder="name@example.com">
+          </div>
         </div>
         
-        <div class="mb-3">
-          <label for="pwd" class="form-label">Password:</label>
-          <input type="password" class="form-control" id="pwd" placeholder="Enter Password">
-            <span class="input-group-btn">
-              <button class="btn btn-default reveal" type="button"><i class="bi-eye-fill"></i></button>
-            </span>
+        <div class="row mb-3">
+          <label for="newpwd" class="col-sm-2 col-form-label">Password:</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="newpwd" placeholder="Enter Password">
+          </div>
         </div>
 
-        <div class="mb-3">
-          <label for="team" class="form-label">Team Name:</label>
-          <input type="text" class="form-control" id="team" placeholder="cool team name">
+        <div class="row mb-3">
+          <label for="team" class="col-sm-2 col-form-label">Team Name:</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="team" placeholder="cool team name">
+          </div>
         </div>
 
-        <select class="form-select" aria-label="Default select example">
+        <select class="mb-3">
           <option selected>Select how many members are on your team:</option>
           <option value="2">Two</option>
           <option value="3">Three</option>
@@ -90,7 +103,7 @@
           <option value="5">Five</option>
         </select>
 
-        <div class="form-check">
+        <div class="mb-3">
           <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
           <label class="form-check-label" for="flexCheckDefault">Check to recieve emails about upcoming events</label>
         </div>

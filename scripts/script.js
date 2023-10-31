@@ -12,7 +12,7 @@ $(document).ready(function(){
     
     //click the eye icon w/class reveal 
     $(".reveal").on('click',function() {
-      let $pwd = $("#pwd");
+      let $pwd = $("#oldpwd");
       
       if ($pwd.attr('type') === 'password') {
           $pwd.attr('type', 'text');
