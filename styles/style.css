@@ -13,9 +13,15 @@ body {
 .mb-3 {
     width: 50%;
     display: inline-block;
+    display: flex;
+    margin-left: 20%;
 }
 
-.links {
+.links > a {
     text-align: left;
     color: white;
+}
+
+.pass {
+    display: flex;
 }
