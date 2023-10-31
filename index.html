@@ -11,32 +11,40 @@
 </head>
 
 <body>
+  <div class="links">
+    <a href="https://github.com/rachelhoneycutt/urban-tribble-hotel">Repo</a>
+    <br>
+    <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Frachelhoneycutt.github.io%2Furban-tribble-hotel%2F" target="_blank">Look at this pages validity!!</a>
+    <br>
+    <a href="https://github.com/rachelhoneycutt">Check out my Github!</a>
+    <br>
+</div>
 
-  <h1>Welcome to Underwater Bingo!</h1>
+  <div class="container">
+    <h1>Welcome to Underwater Bingo!</h1>
 
-  <div class="loginPage">
-    <h3>Please login below or sign up a new team.</h3>
-    <form>
-      <div class="mb-3">
-        <label for="userEmail" class="form-label">Email:</label>
-        <input type="email" class="form-control" id="userEmail" placeholder="name@example.com">
-      </div>
-
-      <div class="form-group">
-        <div class="input-group">
-          <label for="pwd" class="form-label">Password:</label>
-          <input type="password" class="form-control pwd" id="pwd" placeholder="Enter Password">
-          <span class="input-group-btn">
-            <button class="btn btn-default reveal" type="button"><i class="bi-eye-fill"></i></button>
-          </span>
+    <div class="loginPage">
+      <h3>Please login below or sign up a new team.</h3>
+      <form>
+        <div class="mb-3">
+          <label for="userEmail" class="form-label">Email:</label>
+          <input type="email" class="form-control" id="userEmail" placeholder="name@example.com">
         </div>
-      </div>
 
-      <br>
-      <button type="button" onclick="checkUser()">Login</button>
-      <button type="reset">Clear</button>
-      <button type="button" onclick="signUp()">Sign Up</button>
-    </form>
+        <div class="mb-3">
+          <label for="pwd" class="form-label">Password:</label>
+          <input type="password" class="form-control" id="pwd" placeholder="Enter Password">
+            <span class="input-group-btn">
+              <button class="btn btn-default reveal" type="button"><i class="bi-eye-fill"></i></button>
+            </span>
+        </div>
+
+          <br>
+          <button type="button">Login</button>
+          <button type="reset">Clear</button>
+          <button type="button" id="signUpBTN">Sign Up</button>
+        </form>
+    </div>
 
     <div class="signUp">
       <h3>Please fill out the form below.</h3>
@@ -50,7 +58,7 @@
           <label for="lname" class="form-label">Last name:</label>
           <input type="text" class="form-control" id="lname" placeholder="Doe">
         </div>
-  
+      
         <div class="mb-3">
           <label for="phoneNumber" class="form-label">Phone Number:</label>
           <input type="text" class="form-control" id="phoneNumber" placeholder="XXX-XXX-XXXX">
@@ -60,23 +68,20 @@
           <label for="userEmail" class="form-label">Email:</label>
           <input type="email" class="form-control" id="userEmail" placeholder="name@example.com">
         </div>
-  
-        <div class="form-group">
-          <div class="input-group">
-            <label for="pwd" class="form-label">Password:</label>
-            <br>
-            <input type="password" class="form-control pwd" id="pwd" placeholder="Enter Password">
+        
+        <div class="mb-3">
+          <label for="pwd" class="form-label">Password:</label>
+          <input type="password" class="form-control" id="pwd" placeholder="Enter Password">
             <span class="input-group-btn">
               <button class="btn btn-default reveal" type="button"><i class="bi-eye-fill"></i></button>
             </span>
-          </div>
         </div>
 
         <div class="mb-3">
           <label for="team" class="form-label">Team Name:</label>
           <input type="text" class="form-control" id="team" placeholder="cool team name">
         </div>
-  
+
         <select class="form-select" aria-label="Default select example">
           <option selected>Select how many members are on your team:</option>
           <option value="2">Two</option>
@@ -91,10 +96,12 @@
         </div>
 
         <br>
-        <button type="button" onclick="newUser()">Login</button>
+        <button type="submit">Submit</button>
         <button type="reset">Clear</button>
       </form>
+    </div>
   </div>
+    
     
 
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
